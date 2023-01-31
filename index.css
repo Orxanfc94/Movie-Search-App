@@ -1,0 +1,117 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family:'Poppins',sans-serif;
+}
+body{
+    height: 100vh;
+    background: linear-gradient(#141414 50%,#eed202 50%);
+}
+
+.container{
+    font-size: 16px;
+    width: 90vw;
+    max-width: 37.5em;
+    padding:  3em 1.8em;
+    background-color: #201f28;
+    position: absolute;
+    transform:translate(-50%,-50%) ;
+    top: 50%;
+    left: 50%;
+    border-radius: 0.6em;
+    box-shadow: 1.2em 2em 3em rgba(0,0,0,0.2);
+}
+
+.search-container{
+    display: grid;
+    grid-template-columns:9fr 3fr;
+    gap: 1.2em;
+}
+.search-container input,
+.search-container button{
+    font-size: 0.9em;
+    outline: none;
+    border-radius: 0.3em;
+}
+.search-container input{
+    background-color: transparent;
+    border:  1px solid #a0a0a0;
+    color: #fff;
+    padding-left: 10px;
+
+}
+.search-container input:focus{
+    border-color: #fff;
+}
+.search-container button{
+    background-color: #ffb92a;
+    border: none;
+    cursor: pointer;
+}
+
+#result {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1em;
+    transition: all 0.2s;
+  }
+  
+  #result img {
+    width: 200px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 0.6em;
+    box-shadow: 1.2em 2em 3em rgba(0, 0, 0, 0.2);
+  }
+  
+  #result h2 {
+    font-size: 1.2em;
+    margin: 0.5em 0;
+    color: #fff;
+  }
+  
+  #result p {
+    color: #a0a0a0;
+    margin: 0.5em 0;
+  }
+.titleDiv{
+    display: flex;
+align-items: center;
+
+}
+.titleDiv a{
+    margin-left: 10px;
+ 
+    
+}
+.titleDiv a i{
+    font-size: 18px;
+    color:rgb(182, 167, 167);
+    transition: all 0.2s;
+
+}
+.titleDiv a:hover i{
+    cursor: pointer;
+color: rgb(216, 151, 9);
+ 
+}
+
+#bigStar{
+    font-size: 35px;
+    color: white;
+
+}
+.bigStar1{
+    display: none;
+}
+.bigStar{
+    display:inline;
+    position: absolute;
+    top: 450px;
+    left: 512px;
+    z-index: 1;
+  color: #e7a115;
+    transition: all 0.1s;
+}
